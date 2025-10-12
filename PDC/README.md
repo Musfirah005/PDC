@@ -1,7 +1,10 @@
 # PDC
 Chapter 01 code
-humne ek file bnai hai jismein hum tribonacci series ko calculate kr rhe hain aur phr usko ek 
-list mein save krwa rhe hain. now this foel is inmprted to the main file where this file is 
-going to be run first without using process or thread just simply it will be calculated and will be saved in the list, then it is calculated using a process and at last using a thread. ab in sb mein time kitna lagega ye calculate ho kr output mein dega ye program just.
 
-conclusion of the code is the process is going to take longer time than a thread or simple calculation 
+First, we created a file named Tribonacci.py that calculates the Tribonacci series and stores the generated numbers in a list.This file is then imported into the Main.py file, where the Tribonacci series is executed in three different ways:
+Normal Run: calculated normally without using threading or multiprocessing.
+Threaded Run: calculated using multiple threads.
+Process Run: calculated using multiple processes.
+The program measures the execution time for each method and displays the time taken for all three approaches in the output.
+
+The results show that the normal and threaded runs executed almost instantly because the task size was small, while the process run took longer due to the overhead of creating separate processes. This indicates that multiprocessing is beneficial only for larger or more complex computations, whereas for smaller tasks, normal or threaded execution is faster and more efficient.
