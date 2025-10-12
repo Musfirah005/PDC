@@ -41,7 +41,6 @@ def process_run(n, num_processes):
     processes = []
     start = time.time()
 
-    # ✅ Fix: Use normal function instead of lambda
     for i in range(num_processes):
         p = multiprocessing.Process(target=run_process, args=(results, i, n))
         processes.append(p)
